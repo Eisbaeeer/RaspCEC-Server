@@ -5,16 +5,16 @@ RaspBerry CEC Server
 * Based on original "https://github.com/Pulse-Eight/libcec" Version 2.4.1-2 
 
 ## Dokumentation / Funktionsweise
-In die Lib wurde ein Socket-Server implementiert, der �ber den Port 8888 reine 
-Hex-Befehle entgegen nimmt. Die notwendigen Befehle zur Steuerung von CEC-f�hignen 
+In die Lib wurde ein Socket-Server implementiert, der &uuml;ber den Port 8888 reine 
+Hex-Befehle entgegen nimmt. Die notwendigen Befehle zur Steuerung von CEC-f&auml;hignen 
 Geräten können unter: http://www.cec-o-matic.com generiert werden. Diese Befehle 
-m�ssen dann über den Socket als reine Hex-Werte �bergeben werden.
+m&uuml;ssen dann über den Socket als reine Hex-Werte &uuml;bergeben werden.
 
 Beispiel:
-Fernseher auf Stand-by w�re: 10:36 --> 0x100x36 in Hex
+Fernseher auf Stand-by w&auml;re: 10:36 --> 0x100x36 in Hex
 
-�ndern des Ports vor dem Compilieren:
-Der Port, auf den der Server horcht, kann wie folgt ge�ndert werden:
+&Auml;ndern des Ports vor dem Compilieren:
+Der Port, auf den der Server horcht, kann wie folgt ge&auml;ndert werden:
 Editieren von /src/lib/CECProcessor.cpp
 Zeile 1095 --> den Wert in Klammer anpassen (default 8888)
 
