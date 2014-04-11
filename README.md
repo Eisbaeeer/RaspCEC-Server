@@ -19,27 +19,32 @@ Editieren von /src/lib/CECProcessor.cpp
 Zeile 1095 --> den Wert in Klammer anpassen (default 8888)
 
 ## Compilieren der Lib:
-# System updaten
+### System updaten
 ```sudo apt-get update```
 
-# System Voraussetzungen schaffen
+### System Voraussetzungen schaffen
 ```sudo apt-get install build-essential autoconf liblockdev1-dev libudev-dev git libtool pkg-config```
 
-# Holen
+### Holen
 ```git clone https://github.com/Eisbaeeer/RaspCEC-Server```
+
 ```cd RaspCEC-Server```
+
 ```cd libcec```
 
-# Compilieren
+### Compilieren
 ```sudo ./bootstrap```
+
 ```sudo ./configure --with-rpi-include-path=/opt/vc/include --with-rpi-lib-path=/opt/vc/lib --enable-rpi```
+
 ```sudo make```
+
 ```sudo make install```
 
-# Libraries linken
+### Libraries linken
 ```sudo ldconfig```
 
-## Starten des CEC-Servers
+### Starten des CEC-Servers
 ```cec-client &```
 
  
